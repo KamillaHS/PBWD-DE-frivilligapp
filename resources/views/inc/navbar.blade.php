@@ -14,6 +14,7 @@
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/historik">Historik</a></li>
+                <li><a href="/posts">Blog</a></li>
             </ul>
         </div> <!-- nav end  -->
     </div>

@@ -14,7 +14,9 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                        <a href="/posts/create" class="btn btn-primary">Opret Job</a>
+                        <h3>Dine Job Opslag</h3>
+
                 </div>
             </div>
         </div>

@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/', 'PagesController@index');
+Route::get('/about', 'PagesController@about');
+Route::get('/historik', 'PagesController@historik');
+
+
+// Route to User Profile
+//Route::get('/users/{id}', function ($id) {
+//    return view('pages/userprofile');
+//});
+
+Route::resource('posts', 'PostsController');

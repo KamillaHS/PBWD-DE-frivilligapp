@@ -52,6 +52,7 @@
                                     @else
                                         <p id="no-jobs">Du har ikke fuldendt nogen jobs...</p>
                                     @endif
+
                                 </div>
                             </div>
                         </div>

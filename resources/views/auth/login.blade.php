@@ -76,7 +76,9 @@
                                         Login
                                     </button>
                                     <button type="button" class="btn btn-primary btn-block" id="button-register">
+                                        <a href="{{ route('register') }}">
                                         Opret Konto
+                                        </a>
                                     </button>
                                 </div>
                             </div>

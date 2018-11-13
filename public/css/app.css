@@ -8350,6 +8350,10 @@ button.close {
   }
 }
 
+.navbar_bottum {
+  display: none;
+}
+
 #login-big-box {
   padding: 0;
 }
@@ -8669,7 +8673,71 @@ a {
   color: white;
 }
 
+@media only screen and (min-width: 501px) {
+  .navbar_bottum,
+  .navbar-buttoms {
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
+  body {
+    position: relative;
+  }
+
+  .navbar_buttom {
+    background-color: #517BBE;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    padding-bottom: 0.1px;
+    padding-top: 8px;
+    margin: 0 auto;
+  }
+
+  .fa.fa-home {
+    color: white;
+    font-size: 40px;
+    position: relative;
+    padding-bottom: 7%;
+    padding-top: 7%;
+  }
+
+  .fas.fa-user {
+    color: white;
+    font-size: 40px;
+    position: relative;
+    padding-bottom: 7%;
+    padding-top: 7%;
+  }
+
+  .fas.fa-history {
+    color: white;
+    font-size: 40px;
+    position: relative;
+    padding-bottom: 7%;
+    padding-top: 7%;
+  }
+
+  .navbar-buttoms > li {
+    margin: 0 auto;
+    float: left;
+    color: rgba(0, 0, 0, 0);
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+  }
+
+  .navbar-buttoms {
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+  }
+
+  ul li {
+    border-right: 5px solid white;
+  }
+
   #search-filters {
     width: 100%;
     padding: 5% 0% 0% 0%;

@@ -8350,75 +8350,6 @@ button.close {
   }
 }
 
-.navbar_bottum {
-  display: none;
-}
-
-#login-big-box {
-  padding: 0;
-}
-
-.panel-heading {
-  display: none;
-}
-
-#frontpage-box {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 5%;
-}
-
-#form-body-custom {
-  width: 80%;
-  margin: auto;
-}
-
-#form-buttons-custom {
-  width: 50%;
-}
-
-#button-login {
-  background-color: #517BBE;
-  border: none;
-}
-
-#button-login:hover {
-  background-color: #456799;
-}
-
-.panel-body {
-  padding-top: 5%;
-}
-
-#user-icon {
-  font-size: 20px;
-}
-
-#user-big-icon {
-  font-size: 50px;
-}
-
-#register-pics {
-  margin-left: 20px;
-}
-
-#profile-picture {
-  margin-top: 6%;
-}
-
-#profile-cv {
-  margin-top: 6%;
-}
-
-#button-register {
-  background-color: #E84335;
-  border: none;
-}
-
-#button-register:hover {
-  background-color: #B8362C;
-}
-
 #search-bar {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -8484,6 +8415,333 @@ button.close {
 #newest-headline {
   margin-top: 5%;
   color: white;
+}
+
+@media (max-width: 500px) {
+  body {
+    position: relative;
+  }
+
+  .navbar-inverse {
+    display: none;
+  }
+
+  .col-md-8 {
+    padding: 0;
+  }
+
+  #search-filters {
+    width: 100%;
+    padding: 5% 0% 0% 0%;
+  }
+
+  #filter-cat {
+    margin: 1.7%;
+    padding: 3% 11% 3% 11%;
+    background-color: #517BBE;
+    font-size: 200%;
+    border: none;
+  }
+
+  #filter-area {
+    margin: 1.7%;
+    padding: 3% 11% 3% 11%;
+    background-color: #E44134;
+    font-size: 200%;
+    border: none;
+  }
+
+  #filter-date {
+    margin: 1.7%;
+    padding: 3% 11% 3% 11%;
+    background-color: #30A451;
+    font-size: 200%;
+    border: none;
+  }
+}
+
+.navbar_bottum {
+  display: none;
+}
+
+@media only screen and (min-width: 501px) {
+  .navbar_bottum,
+  .navbar-buttoms {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar_buttom {
+    background-color: #517BBE;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    padding-bottom: 0.1px;
+    padding-top: 8px;
+    margin: 0 auto;
+  }
+
+  .fa.fa-home {
+    color: white;
+    font-size: 40px;
+    position: relative;
+    padding-bottom: 7%;
+    padding-top: 7%;
+  }
+
+  .fas.fa-user {
+    color: white;
+    font-size: 40px;
+    position: relative;
+    padding-bottom: 7%;
+    padding-top: 7%;
+  }
+
+  .fas.fa-history {
+    color: white;
+    font-size: 40px;
+    position: relative;
+    padding-bottom: 7%;
+    padding-top: 7%;
+  }
+
+  .navbar-buttoms > li {
+    margin: 0 auto;
+    float: left;
+    color: rgba(0, 0, 0, 0);
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+  }
+
+  .navbar-buttoms {
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+  }
+
+  ul li {
+    border-right: 4px solid rgba(255, 255, 255, 0.4);
+  }
+
+  ul li:last-child {
+    border: none;
+  }
+}
+
+#login-big-box {
+  padding: 0;
+}
+
+.panel-heading {
+  display: none;
+}
+
+#frontpage-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5%;
+}
+
+#form-body-custom {
+  width: 80%;
+  margin: auto;
+}
+
+#logo-box {
+  width: 100%;
+  margin: 5% 10% 0% 10%;
+  padding: 10% 10% 10% 15%;
+}
+
+#app_logo {
+  width: 60%;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+#user-icon {
+  font-size: 20px;
+  color: white;
+}
+
+.form-control {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: white;
+}
+
+.form-control::-ms-input-placeholder {
+  color: white;
+}
+
+.form-control::placeholder {
+  color: white;
+}
+
+#form-buttons-custom {
+  width: 50%;
+}
+
+#button-login {
+  background-color: #517BBE;
+  border: none;
+}
+
+#button-login:hover {
+  background-color: #456799;
+}
+
+#button-register {
+  background-color: #E84335;
+  border: none;
+}
+
+#button-register:hover {
+  background-color: #B8362C;
+}
+
+/* enable absolute positioning */
+
+.inner-addon {
+  position: relative;
+}
+
+/* style icon */
+
+.inner-addon .fas {
+  position: absolute;
+  padding: 8px;
+  pointer-events: none;
+}
+
+/* align icon */
+
+.left-addon .fas {
+  left: 15px;
+}
+
+.right-addon .fas {
+  right: 0px;
+}
+
+/* add padding  */
+
+.left-addon input {
+  padding-left: 35px;
+}
+
+.right-addon input {
+  padding-right: 30px;
+}
+
+@media (min-width: 500px) {
+  #form-body-custom {
+    margin-left: 3%;
+  }
+}
+
+@media (max-width: 500px) {
+  #logo-box {
+    width: 100%;
+    margin: 5% 10% -5% 10%;
+    padding: 10% 10% 10% 7%;
+  }
+
+  #app_logo {
+    width: 80%;
+  }
+
+  #button-login {
+    margin-left: 10%;
+    width: 180%;
+  }
+
+  #button-register {
+    margin-left: 10%;
+    width: 180%;
+  }
+}
+
+.panel-body {
+  padding-top: 5%;
+}
+
+#user-icon {
+  font-size: 20px;
+}
+
+#user-big-icon {
+  font-size: 50px;
+}
+
+#register-pics {
+  margin-left: 20px;
+}
+
+#profile_picture {
+  margin-top: 10%;
+  width: 34%;
+}
+
+#profile_cv {
+  margin-top: 10%;
+  width: 34%;
+}
+
+#register-pics {
+  margin-left: 20%;
+}
+
+#button-register2 {
+  background-color: #E84335;
+  border: none;
+}
+
+#button-register2:hover {
+  background-color: #B8362C;
+}
+
+@media (min-width: 500px) {
+  #register-form {
+    margin-left: 0%;
+    margin-right: 15%;
+  }
+}
+
+@media (max-width: 500px) {
+  #register-form {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #button-register2 {
+    width: 100%;
+  }
+
+  #register-pics {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 8%;
+  }
+
+  #reg_upload {
+    margin: -40px 0 0 70px;
+  }
+
+  #profile_picture {
+    width: 28%;
+    margin-top: 0;
+  }
+
+  #profile_cv {
+    width: 28%;
+    margin-top: 0;
+  }
 }
 
 #profile-content {
@@ -8618,159 +8876,11 @@ button.close {
   color: white;
 }
 
-#job-post {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  color: white;
-  height: 86px;
-  margin: 5% 0% 5% 0%;
-}
-
-a {
-  color: white;
-}
-
-#job-post1 {
-  width: 15%;
-  float: left;
-  padding: 2% 4% 2% 4%;
-}
-
-#job-post2 {
-  width: 70%;
-  float: left;
-}
-
-#job-title {
-  font-size: 20px;
-  margin: 3% 0px -20px 6%;
-}
-
-#job-line {
-  width: 90%;
-  height: 2px;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50px;
-}
-
-#job-area {
-  font-size: 14px;
-  margin: -20px 0px 0px 6%;
-}
-
-#job-post3 {
-  width: 15%;
-  float: left;
-}
-
-#job-dato {
-  font-size: 20px;
-  padding: 30% 0% 0% 25%;
-}
-
 #no-jobs {
   color: white;
 }
 
-@media only screen and (min-width: 501px) {
-  .navbar_bottum,
-  .navbar-buttoms {
-    display: none;
-  }
-}
-
 @media (max-width: 500px) {
-  body {
-    position: relative;
-  }
-
-  .navbar_buttom {
-    background-color: #517BBE;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    height: 60px;
-    width: 100%;
-    padding-bottom: 0.1px;
-    padding-top: 8px;
-    margin: 0 auto;
-  }
-
-  .fa.fa-home {
-    color: white;
-    font-size: 40px;
-    position: relative;
-    padding-bottom: 7%;
-    padding-top: 7%;
-  }
-
-  .fas.fa-user {
-    color: white;
-    font-size: 40px;
-    position: relative;
-    padding-bottom: 7%;
-    padding-top: 7%;
-  }
-
-  .fas.fa-history {
-    color: white;
-    font-size: 40px;
-    position: relative;
-    padding-bottom: 7%;
-    padding-top: 7%;
-  }
-
-  .navbar-buttoms > li {
-    margin: 0 auto;
-    float: left;
-    color: rgba(0, 0, 0, 0);
-    padding-left: 10.5%;
-    padding-right: 10.5%;
-  }
-
-  .navbar-buttoms {
-    -webkit-padding-start: 0px;
-            padding-inline-start: 0px;
-  }
-
-  ul li {
-    border-right: 5px solid white;
-  }
-
-  #search-filters {
-    width: 100%;
-    padding: 5% 0% 0% 0%;
-  }
-
-  #filter-cat {
-    margin: 1.7%;
-    padding: 3% 11% 3% 11%;
-    background-color: #517BBE;
-    font-size: 200%;
-    border: none;
-  }
-
-  #filter-area {
-    margin: 1.7%;
-    padding: 3% 11% 3% 11%;
-    background-color: #E44134;
-    font-size: 200%;
-    border: none;
-  }
-
-  #filter-date {
-    margin: 1.7%;
-    padding: 3% 11% 3% 11%;
-    background-color: #30A451;
-    font-size: 200%;
-    border: none;
-  }
-
-  .navbar-inverse {
-    display: none;
-  }
-
   .container {
     padding: 0;
     margin: 0;
@@ -8855,7 +8965,60 @@ a {
     margin-top: 50px;
     color: white;
   }
+}
 
+#job-post {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: white;
+  height: 86px;
+  margin: 5% 0% 5% 0%;
+}
+
+a {
+  color: white;
+}
+
+#job-post1 {
+  width: 15%;
+  float: left;
+  padding: 2% 4% 2% 4%;
+}
+
+#job-post2 {
+  width: 70%;
+  float: left;
+}
+
+#job-title {
+  font-size: 20px;
+  margin: 3% 0px -20px 6%;
+}
+
+#job-line {
+  width: 90%;
+  height: 2px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+}
+
+#job-area {
+  font-size: 14px;
+  margin: -20px 0px 0px 6%;
+}
+
+#job-post3 {
+  width: 15%;
+  float: left;
+}
+
+#job-dato {
+  font-size: 20px;
+  padding: 30% 0% 0% 25%;
+}
+
+@media (max-width: 500px) {
   #job-post {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;

@@ -1,0 +1,80 @@
+.panel-body {
+  padding-top: 5%;
+}
+
+#user-icon {
+  font-size: 20px;
+}
+
+#user-big-icon {
+  font-size: 50px;
+}
+
+#register-pics {
+  margin-left: 20px;
+}
+
+#profile_picture {
+  margin-top: 10%;
+  width: 34%;
+}
+
+#profile_cv {
+  margin-top: 10%;
+  width: 34%;
+}
+
+#register-pics {
+  margin-left: 20%;
+}
+
+#button-register2 {
+  background-color: #E84335;
+  border: none;
+}
+
+#button-register2:hover {
+  background-color: #B8362C;
+}
+
+@media (min-width: 500px) {
+
+  #register-form {
+    margin-left: 0%;
+    margin-right: 15%;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  #register-form {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #button-register2 {
+    width: 100%;
+  }
+
+  #register-pics {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 8%;
+  }
+
+  #reg_upload {
+    margin: -40px 0 0 70px;
+  }
+
+  #profile_picture {
+    width: 28%;
+    margin-top: 0;
+  }
+
+  #profile_cv {
+    width: 28%;
+    margin-top: 0;
+  }
+}

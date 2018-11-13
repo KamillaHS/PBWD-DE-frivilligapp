@@ -1,0 +1,118 @@
+#login-big-box {
+  padding: 0;
+}
+
+.panel-heading {
+  display: none;
+}
+
+#frontpage-box {
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  padding: 5%;
+}
+
+#form-body-custom {
+  width: 80%;
+  margin: auto;
+}
+
+#logo-box {
+  width: 100%;
+  margin: 5% 10% 0% 10%;
+  padding: 10% 10% 10% 15%
+}
+
+#app_logo {
+  width: 60%;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+#user-icon {
+  font-size: 20px;
+  color: white;
+}
+
+.form-control {
+  background-color: rgba(0,0,0,0.4);
+  border: none;
+}
+
+.form-control::placeholder {
+  color: white;
+}
+
+#form-buttons-custom {
+  width: 50%;
+}
+
+#button-login {
+  background-color: #517BBE;
+  border: none;
+}
+
+#button-login:hover {
+  background-color: #456799;
+}
+
+#button-register {
+  background-color: #E84335;
+  border: none;
+}
+
+#button-register:hover {
+  background-color: #B8362C;
+}
+
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+/* style icon */
+.inner-addon .fas {
+  position: absolute;
+  padding: 8px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .fas  { left:  15px;}
+.right-addon .fas { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  35px; }
+.right-addon input { padding-right: 30px; }
+
+@media (min-width: 500px) {
+
+  #form-body-custom {
+    margin-left: 3%;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  #logo-box {
+    width: 100%;
+    margin: 5% 10% -5% 10%;
+    padding: 10% 10% 10% 7%
+  }
+
+  #app_logo {
+    width: 80%;
+  }
+
+  #button-login {
+    margin-left: 10%;
+    width: 180%;
+  }
+
+  #button-register {
+    margin-left: 10%;
+    width: 180%;
+  }
+
+}

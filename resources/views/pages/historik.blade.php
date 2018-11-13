@@ -17,7 +17,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default" id="profile-content" >
 
-                    <div class="panel-body" style="background-image: url(https://www.imageupload.co.uk/images/2018/11/05/108812.png);background-position: center center; background-size: 200%; background-repeat: no-repeat">
+                    <div class="panel-body" style="background-image: url(/images/10882.png);background-position: center center; background-size: 200%; background-repeat: no-repeat">
 
                         <div id="profile-header">
                             <div id="header-col1">

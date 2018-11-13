@@ -69,10 +69,10 @@
                             </div>
 
                             <div id="register-pics" class="form-group{{ $errors->has('profile_picture') ? ' has-error' : '' }}">
-                                <label for="profile-picture" class="col-md-4 control-label"> <i id="user-big-icon" class="fas fa-user"></i> </label>
+                                <label for="profile_picture" class="col-md-4 control-label"> <i id="user-big-icon" class="fas fa-user"></i> </label>
 
                                 <div class="col-md-6">
-                                    <input id="profile-picture" type="file" class="custom-file-input" name="profile-picture">
+                                    <input id="profile-picture" type="file" class="custom-file-input" name="profile_picture">
 
                                     @if ($errors->has('profile_picture'))
                                         <span class="help-block">
@@ -83,10 +83,10 @@
                             </div>
 
                             <div id="register-pics" class="form-group{{ $errors->has('profile_cv') ? ' has-error' : '' }}">
-                                <label for="profile-cv" class="col-md-4 control-label"> <i id="user-big-icon" class="fas fa-file-invoice"></i> </label>
+                                <label for="profile_cv" class="col-md-4 control-label"> <i id="user-big-icon" class="fas fa-file-invoice"></i> </label>
 
                                 <div class="col-md-6">
-                                    <input id="profile-cv" type="file" class="custom-file-input" name="profile-cv">
+                                    <input id="profile_cv" type="file" class="custom-file-input" name="profile_cv">
 
                                     @if ($errors->has('profile_cv'))
                                         <span class="help-block">

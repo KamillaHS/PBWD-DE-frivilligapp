@@ -70,6 +70,7 @@
     <ul class="navbar-buttoms">
         <li><a href="/historik"><i class="fas fa-history"></i></a></li>
         <li><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="/"><i class="fa fa-home"></i></a></li>
         <li><a href="/dashboard"><i class="fas fa-user"></i></a></li>
     </ul>
 </div>

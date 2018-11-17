@@ -66,7 +66,7 @@
 
                                     <div class="col-md-6">
                                         <i id="user-icon" class="fas fa-comment-alt"></i>
-                                        <input id="description" type="textarea" class="form-control" name="description" placeholder="Beskrivelse">
+                                        <input id="description" type="text" class="form-control" name="description" placeholder="Beskrivelse">
 
                                         @if ($errors->has('description'))
                                             <span class="help-block">

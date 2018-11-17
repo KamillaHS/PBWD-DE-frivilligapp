@@ -14,14 +14,15 @@
 
   .navbar_buttom {
     background-color: #517BBE;
-    overflow: hidden;
+    overflow: auto;
     position: fixed;
+    z-index: 999;
     bottom: 0;
     height: 60px;
     width: 100%;
     padding-bottom: 0.1px;
     padding-top: 8px;
-    margin: 0 auto;
+    margin: auto;
   }
 
   .fa.fa-home {

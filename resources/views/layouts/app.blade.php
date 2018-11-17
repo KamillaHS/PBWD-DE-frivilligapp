@@ -19,6 +19,13 @@
     <link href="{{ asset('sass/customReg.scss') }}" rel="stylesheet">
     <link href="{{ asset('sass/customUser.scss') }}" rel="stylesheet">
     <link href="{{ asset('sass/customJobList.scss') }}" rel="stylesheet">
+    <link href="{{ asset('sass/customJob.scss') }}" rel="stylesheet">
+
+
+    {{--@if(url("frivilligapp.local/posts/{{$post->id}}/edit"))--}}
+        {{--<link href="{{ asset('sass/customJobEdit.scss') }}" rel="stylesheet">--}}
+    {{--@endif--}}
+
 
 </head>
 <body>
@@ -34,7 +41,8 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>
-        CKEDITOR.replace( 'article-ckeditor' );
+        CKEDITOR.replace( 'article-ckeditor', {height: 100});
+        CKEDITOR.replace( 'body-editor', {height: 100} );
     </script>
 </body>
 </html>

@@ -24,6 +24,26 @@
                                 </div>
                             </div>
 
+                            <?php
+                            $areainfo = [
+                                '1' => 'Bornholm',
+                                '2' => 'Fyn',
+                                '3' => 'Københavns området',
+                                '4' => 'Lolland-Falster',
+                                '5' => 'Midtjylland',
+                                '6' => 'Nordjylland',
+                                '7' => 'Sjælland',
+                                '8' => 'Sønderjylland'
+                            ];
+
+                            $categoryinfo = [
+                                '1' => 'Bæredygtighed og Genbrug',
+                                '2' => 'Flygtninge og Integration',
+                                '3' => 'Lektiehjælp og Børneklubber',
+                                '4' => 'Praktisk Arbejde'
+                            ];
+                            ?>
+
                             <div id="job-content-content">
                                 <div id="job-content-col1">
                                     <img id="job-logo" src="/storage/cover_images/{{$post->cover_image}}" alt="">
@@ -31,7 +51,7 @@
                                 <div id="job-content-col2">
                                     <h2 id="job-name">{{$post->title}}</h2>
                                     <br><div id="title-line"></div>
-                                    <br><h3 id="job-title-area">Område</h3>
+                                    <br><h3 id="job-title-area">{{$areainfo[$post->area]}}</h3>
                                 </div>
                                 <div id="job-info">
                                     <table>
@@ -43,9 +63,9 @@
                                         </td>
                                         <td id="info-info">
                                             <h4>{{$post->user->name}}</h4>
-                                            <h4>Startdato</h4>
-                                            <h4>Slutdato</h4>
-                                            <h4>Kategori</h4>
+                                            <h4>{{(new DateTime($post->startdate))->format('d-m-Y')}}</h4>
+                                            <h4>{{(new DateTime($post->enddate))->format('d-m-Y')}}</h4>
+                                            <h4>{{$categoryinfo[$post->category]}}</h4>
                                         </td>
                                     </table>
 
@@ -56,7 +76,7 @@
                                     </p>
                                     <h4>Krav</h4>
                                     <p id="job-text">
-                                        Ingen krav
+                                        {!!$post->demands!!}
                                     </p>
                                 </div>
 

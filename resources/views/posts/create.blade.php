@@ -21,46 +21,62 @@
 
                         <div id="edit-post-page">
 
+                            <?php
+                                $areainfo = [
+                                    '1' => 'Bornholm',
+                                    '2' => 'Fyn',
+                                    '3' => 'Københavns området',
+                                    '4' => 'Lolland-Falster',
+                                    '5' => 'Midtjylland',
+                                    '6' => 'Nordjylland',
+                                    '7' => 'Sjælland',
+                                    '8' => 'Sønderjylland'
+                                ];
+
+                                $categoryinfo = [
+                                    '1' => 'Bæredygtighed og Genbrug',
+                                    '2' => 'Flygtninge og Integration',
+                                    '3' => 'Lektiehjælp og Børneklubber',
+                                    '4' => 'Praktisk Arbejde'
+                                ];
+
+                            ?>
+
                             {!! Form::open(['action' => 'PostsController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
                             <div class="form-group">
                                 {{Form::label('title', 'Titel')}}
                                 {{Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Titel'])}}
                             </div>
                             <div class="form-group">
-                                <label>Område</label>
-                                <input type="text" class="form-control" placeholder="Område">
+                                {{Form::label('area', 'Område')}}
+                                {{Form::select('area', $areainfo, null, ['class' => 'form-control' ])}}
                             </div>
                             <div class="form-group">
-                                <label>Startdato</label>
-                                <input type="text" class="form-control" placeholder="Dato">
+                                {{Form::label('startdate', 'Startdato')}}
+                                {{Form::date('startdate', null, ['class' => 'form-control', 'placeholder' => '01-01-2018'])}}
                             </div>
                             <div class="form-group">
-                                <label>Slutdato</label>
-                                <input type="text" class="form-control" placeholder="Dato">
+                                {{Form::label('enddate', 'Slutdato')}}
+                                {{Form::date('enddate', null, ['class' => 'form-control', 'placeholder' => '01-01-2018'])}}
                             </div>
                             <div class="form-group">
-                                <label>Kategori</label>
-                                <select class="form-control" id="exampleSelect1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                </select>
+                                {{Form::label('category', 'Kategori')}}
+                                {{Form::select('category', $categoryinfo, null, ['class' => 'form-control' ])}}
                             </div>
                             <div class="form-group">
                                 {{Form::label('body', 'Beskrivelse')}}
                                 {{Form::textarea('body', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Beskrivelse'])}}
                             </div>
                             <div class="form-group">
-                                <label>Krav</label>
-                                <input type="text" id="body-editor" class="form-control" placeholder="Krav">
+                                {{Form::label('demands', 'Krav')}}
+                                {{Form::textarea('demands', '', ['id' => 'body-editor', 'class' => 'form-control', 'placeholder' => 'Krav'])}}
                             </div>
                             <div class="form-group">
-                                <label>Udbyder Logo</label>
+                                {{Form::label('cover_image', 'Udbyder Logo')}}
                                 {{Form::file('cover_image')}}
                             </div>
 
-                            {{Form::submit('submit',['class' => 'btn btn-primary', 'id' => 'button-confirm-changes'])}}
+                            {{Form::submit('Opret Job',['class' => 'btn btn-primary', 'id' => 'button-confirm-changes'])}}
                             {!! Form::close() !!}
 
 

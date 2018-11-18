@@ -45,7 +45,12 @@ class PostsController extends Controller
     {
         $this->validate($request, [
             'title' => 'required',
+            'area' => 'required',
+            'startdate' => 'required',
+            'enddate' => 'required',
+            'category' => 'required',
             'body' => 'required',
+            'demands' => 'nullable',
             'cover_image' => 'image|nullable|max:1999'
         ]);
 
@@ -70,12 +75,19 @@ class PostsController extends Controller
         // Create Post
         $post = new Post;
         $post->title = $request->input('title');
+        $post->area = $request->input('area');
+        $post->startdate = $request->input('startdate');
+        $post->enddate = $request->input('enddate');
+        $post->category = $request->input('category');
         $post->body = $request->input('body');
+        $post->demands = $request->input('demands');
         $post->user_id = auth()->user()->id;
         $post->cover_image = $fileNameToStore;
         $post->save();
 
-        return redirect('/posts')->with('success', 'Post Created');
+
+
+        return redirect('/dashboard')->with('success', 'Post Created');
     }
 
     /**
@@ -140,13 +152,18 @@ class PostsController extends Controller
         // Save Post Changes
         $post =Post::find($id);
         $post->title = $request->input('title');
+        $post->area = $request->input('area');
+        $post->startdate = $request->input('startdate');
+        $post->enddate = $request->input('enddate');
+        $post->category = $request->input('category');
         $post->body = $request->input('body');
+        $post->demands = $request->input('demands');
         if($request->hasFile('cover_image')){
             $post->cover_image = $fileNameToStore;
         }
         $post->save();
 
-        return redirect('/posts')->with('success', 'Post Updated');
+        return redirect("/posts/$post->id")->with('success', 'Post Updated');
     }
 
     /**

@@ -29,7 +29,18 @@
 
                                 <div id="profile-jobs">
 
-
+                                    <?php
+                                    $areainfo = [
+                                        '1' => 'Bornholm',
+                                        '2' => 'Fyn',
+                                        '3' => 'Københavns området',
+                                        '4' => 'Lolland-Falster',
+                                        '5' => 'Midtjylland',
+                                        '6' => 'Nordjylland',
+                                        '7' => 'Sjælland',
+                                        '8' => 'Sønderjylland'
+                                    ];
+                                    ?>
 
                                     @if(count($posts) > 0)
                                         <div id="list">
@@ -41,10 +52,11 @@
                                                     <div id="job-post2">
                                                         <p id="job-title">{{$post->title}}</p>
                                                         <br><div id="job-line"></div>
-                                                        <br><p id="job-area">Område</p>
+                                                        <br><p id="job-area">{{$areainfo[$post->area]}}</p>
                                                     </div>
                                                     <div id="job-post3">
-                                                        <p id="job-dato">Dato</p>
+                                                        <p id="job-dato">{{(new DateTime($post->startdate))->format('d-m-Y')}}</p>
+                                                        <p id="job-dato">{{(new DateTime($post->enddate))->format('d-m-Y')}}</p>
                                                     </div>
                                                 </a></div>
                                             @endforeach

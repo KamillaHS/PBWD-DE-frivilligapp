@@ -16,7 +16,12 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
+            $table->string('area');
+            $table->timestamp('startdate')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('enddate')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->string('category');
             $table->mediumText('body');
+            $table->mediumText('demands');
             $table->timestamps();
         });
     }

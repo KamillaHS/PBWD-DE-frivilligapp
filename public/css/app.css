@@ -8430,6 +8430,10 @@ button.close {
     padding: 0;
   }
 
+  .panel-body {
+    margin: 0 2% 0 2%;
+  }
+
   #search-filters {
     width: 100%;
     padding: 5% 0% 0% 0%;
@@ -8987,7 +8991,7 @@ a {
 }
 
 #post-logo {
-  width: 100%;
+  width: 110%;
 }
 
 #job-post2 {
@@ -9265,8 +9269,12 @@ a {
     padding-top: 8%;
   }
 
+  #info-headings {
+    margin-top: -10px;
+  }
+
   #job-content-col2 {
-    width: 70%;
+    width: 60%;
   }
 
   #job-name {

@@ -47,7 +47,7 @@
                                             @foreach($posts as $post)
                                                 <div id="job-post"><a href="/posts/{{$post->id}}">
                                                     <div id="job-post1">
-                                                        <img style="width: 100%;" src="/storage/cover_images/{{$post->cover_image}}" alt="">
+                                                        <img id="post-logo"  src="/storage/cover_images/{{$post->cover_image}}" alt="">
                                                     </div>
                                                     <div id="job-post2">
                                                         <p id="job-title">{{$post->title}}</p>

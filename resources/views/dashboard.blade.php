@@ -23,7 +23,7 @@
                                 <p id="header-text">Brugerprofil</p>
                             </div>
                             <div id="header-col3">
-                                <a href=""> <i id="settings-button" class="fas fa-cog"></i> </a>
+                                <a href="/edit"> <i id="settings-button" class="fas fa-cog"></i> </a>
                             </div>
                         </div>
 

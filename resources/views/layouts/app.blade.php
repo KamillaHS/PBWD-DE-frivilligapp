@@ -20,6 +20,7 @@
     <link href="{{ asset('sass/customUser.scss') }}" rel="stylesheet">
     <link href="{{ asset('sass/customJobList.scss') }}" rel="stylesheet">
     <link href="{{ asset('sass/customJob.scss') }}" rel="stylesheet">
+    <link href="{{ asset('sass/customUserEdit.scss') }}" rel="stylesheet">
 
 
     {{--@if(url("frivilligapp.local/posts/{{$post->id}}/edit"))--}}

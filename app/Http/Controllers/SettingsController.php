@@ -30,6 +30,9 @@ class SettingsController extends Controller
 
         $user =User::find(Auth::id());
         $user->name = $request->input('name');
+        $user->description = $request->input('description');
+//        $user->profile_picture = $request->input('profile_picture');
+//        $user->profile_cv = $request->input('profile_cv');
         $user->save();
 
         return redirect("/dashboard")->with('success', 'Profil opdateret');

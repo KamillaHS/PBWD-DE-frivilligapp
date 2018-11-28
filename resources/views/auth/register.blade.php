@@ -26,23 +26,6 @@
                         <form class="form-horizontal" id="register-form" method="POST" action="{{ route('register') }}">
                             {{ csrf_field() }}
 
-                            <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                                <div class="inner-addon left-addon">
-                                    <label for="name" class="col-md-4 control-label"> </label>
-
-                                    <div class="col-md-6">
-                                        <i id="user-icon" class="fas fa-user"></i>
-                                        <input id="name" type="text" class="form-control" name="name" placeholder="Navn" value="{{ old('name') }}" required autofocus>
-
-                                        @if ($errors->has('name'))
-                                            <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                        @endif
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                 <div class="inner-addon left-addon">
                                     <label for="email" class="col-md-4 control-label"> </label>
@@ -54,6 +37,23 @@
                                         @if ($errors->has('email'))
                                             <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                        @endif
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                                <div class="inner-addon left-addon">
+                                    <label for="name" class="col-md-4 control-label"> </label>
+
+                                    <div class="col-md-6">
+                                        <i id="user-icon" class="fas fa-user"></i>
+                                        <input id="name" type="text" class="form-control" name="name" placeholder="Navn" value="{{ old('name') }}" required autofocus>
+
+                                        @if ($errors->has('name'))
+                                            <span class="help-block">
+                                        <strong>{{ $errors->first('name') }}</strong>
                                     </span>
                                         @endif
                                     </div>
